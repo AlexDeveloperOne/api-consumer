@@ -22,8 +22,9 @@ https: fetch('https://economia.awesomeapi.com.br/json/last/EUR-BRL')
   })
 /////////////// via cep
 const cep = document.getElementById('cepIn').value
-const adress = 'https://viacep.com.br/ws/'+ cep + '/json'
-https: fetch('https://viacep.com.br/ws/25525270/json')
+//const adress = 'https://viacep.com.br/ws/'+ cep + '/json'
+//https: fetch('https://viacep.com.br/ws/25525270/json')
+https: fetch('https://viacep.com.br/ws/' + cep + '/json')
   .then(response => {
     return response.json()
   })
